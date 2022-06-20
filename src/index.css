@@ -1,0 +1,51 @@
+@import url("https://fonts.cdnfonts.com/css/sofia-pro");
+@import url("https://fonts.cdnfonts.com/css/besty");
+@import url("https://fonts.cdnfonts.com/css/bligh-trial");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Bligh trial", sans-serif;
+}
+
+.font-display {
+  font-family: "Besty", sans-serif;
+}
+
+.app {
+  @apply w-full py-4 px-4 md:px-8;
+}
+
+.title {
+  @apply text-3xl font-display 
+      text-center py-4;
+}
+
+body {
+  @apply bg-slate-900 text-gray-100;
+}
+
+.btn-add {
+  -webkit-font-smoothing: subpixel-antialiased;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.view-btn {
+  @apply bg-blue-400 text-white font-semibold py-2 px-4 rounded-md gap-1 flex items-center justify-center;
+}
+
+.delete-btn {
+  @apply bg-red-400 text-white font-semibold py-2 px-4 rounded-md gap-1 flex items-center justify-center;
+}
+
+input, textarea{
+  @apply bg-gray-100 shadow-inner w-full border-2 text-slate-900 border-gray-200 rounded-md py-2 px-4;
+  outline: none;
+}
+
+.form-control {
+  @apply flex-1 flex flex-col w-full gap-1 items-start justify-start font-bold text-lg;
+}
